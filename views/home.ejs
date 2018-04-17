@@ -1,7 +1,11 @@
-<h1>Welcome To My Movie Search App</h1>
-<h2>Powered by OMDB</h2>
+<% include ./partials/header %>
 
-<form action="/searchResult" method="GET">
+<h1 class="text-center"> <strong>Welcome To My Movie Search App </strong></h1>
+<h2 class="text-center">Powered by OMDB</h2>
+
+<br></br>
+
+<form class="text-center" action="/searchResult" method="GET">
     <input type="text" name="keyword" placeholder="Please enter keyword here"></input>
     <input type="submit"></input>
 </form>
@@ -14,3 +18,5 @@
 <!--    <input type="text" name="keyword" placeholder="Please enter keyword here"></input>-->
 <!--    <input type="submit"></input>-->
 <!--</form>-->
+
+<% include ./partials/footer %>
