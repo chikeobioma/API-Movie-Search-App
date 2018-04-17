@@ -1,0 +1,13 @@
+<h1>Here are all the movies that contain the key word</h1>
+
+<% searchResult.Search.forEach(function(result){ %>
+    <ul>
+       <li> 
+           <%= result.Title %> - <%= result.Year %>
+       </li> 
+    </ul>
+<% }); %>
+
+<br></br>
+
+<a href="/">Search Again?</a>
