@@ -34,12 +34,8 @@ app.listen(8080, '0.0.0.0', function(){
     console.log("The movie search app is now running...");
 });
 
+
 //OR
-
-// app.listen(process.env.PORT, process.env.IP, function(){
-//     console.log("The app is now running...");
-// });
-
 
 // var express = require("express");
 // var app = express();
@@ -77,6 +73,6 @@ app.listen(8080, '0.0.0.0', function(){
 // });
 
 
-// app.listen(8080, '0.0.0.0', function(){
-//     console.log("The movie search app is now running...");
-// })
+// app.listen(process.env.PORT, process.env.IP, function(){
+//     console.log("The app is now running...");
+// });
