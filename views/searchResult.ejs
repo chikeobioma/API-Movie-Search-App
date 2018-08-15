@@ -1,13 +1,24 @@
-<h1>Here are all the movies that contain the keyword</h1>
 
-<% searchResult.Search.forEach(function(result){ %>
-    <ul>
-       <li> 
-           <%= result.Title %> - <%= result.Year %>
-       </li> 
-    </ul>
-<% }); %>
+<% include ./partials/header %>
 
+<div class="container">
+<h1>Here are all the movies that contain the keyword you entered</h1>
+        <button><a href="/">Search Again?</a></button>
+        <br></br>
+        <div class="row text-center" style="display: flex ; flex-wrap: wrap">
+                <% searchResult.Search.forEach(function(result){ %>
+                <div class="col-md-4 col-sm-6">
+                    <div class="thumbnail">
+                        <div class="parent">
+                        <img class="img-responsive" src="<%= result.Poster %>" style="width:100%"></img>
+                        </div>
+                        <h4 class="caption"><strong><%= result.Title %> - <em><%= result.Year %></em></strong></h4>
+                    </div>
+                </div>
+                <% }); %> 
+         </div>
+           
 <br></br>
+</div>
 
-<a href="/">Search Again?</a>
+<% include ./partials/footer %>
