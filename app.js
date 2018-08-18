@@ -30,10 +30,13 @@ app.get("/searchResult", function(req, res){
   });
 });
 
+// app.listen(process.env.PORT, process.env.IP, function(){
+//     console.log("The app is now running...");
+// });
+
 app.listen(8080, '0.0.0.0', function(){
     console.log("The movie search app is now running...");
 });
-
 
 //OR
 
@@ -72,7 +75,6 @@ app.listen(8080, '0.0.0.0', function(){
 //     res.render("searchResult");
 // });
 
-
-// app.listen(process.env.PORT, process.env.IP, function(){
-//     console.log("The app is now running...");
+// app.listen(8080, '0.0.0.0', function(){
+//     console.log("The movie search app is now running...");
 // });
